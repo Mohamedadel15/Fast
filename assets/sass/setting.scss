@@ -1,0 +1,81 @@
+@import "variable";
+@import "./globalClass.scss";
+@import "mixin.scss";
+@import "./preloader.scss";
+
+/*
+        --- custom styles for my page 
+*/
+body {
+    background-color: $main-Color;
+  &::before {
+    content: "";
+    display: block;
+    height: 50px;
+    left: 0px;
+  }
+}
+
+
+section{
+    .container{
+        .profileInfoCard{
+            .content{
+                width: fit-content;
+                .image{
+                    &::before{
+                        content: "📸"; /* Font Awesome class for camera icon */
+                        font-family: "Font Awesome 5 Free";
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        bottom: -5px;
+                        right: -8px;
+                        background-color: #777;
+                        border-radius: 50%;
+                        border: solid 4px #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    img{
+
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                    }
+                }
+
+            }
+        }
+        .profileInfoCard{
+             .username{
+                min-width: 100%;
+                transition: all 0.3s ease-in-out; 
+            }
+            .margin-0{
+                margin-left: 0% !important;
+            }
+            .margin-100{
+                margin-left: -100% !important;
+            }
+            .margin-200{
+                margin-left: -200% !important;
+            }
+        }
+    }
+}
+
+.active{
+    border-bottom: solid 2px blue;
+    color: blue;
+}
+
+p.userName{
+    @include smallMedia{
+        // width: 50px;
+        padding: 0 0 !important;
+        font-size: 15px;
+    }
+}
+

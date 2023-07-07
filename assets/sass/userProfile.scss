@@ -1,0 +1,56 @@
+@import "variable";
+@import "./globalClass.scss";
+@import "mixin.scss";
+@import "./preloader.scss";
+@import "skeltonLoading.scss";
+
+
+
+/*
+        --- custom styles for my page 
+*/
+
+
+section.userInfo{
+    .container{
+        .row{
+            .userImage{
+                width: fit-content;
+                img{
+                    border: solid 4px #db2777 ;
+                    padding: 5px;
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+#exampleModal{
+    z-index: 9999 !important;
+  }
+  
+  .image-post{
+    object-fit: cover;
+    height: 400px;
+    object-position: center;
+  }
+  
+  .card-body{
+    border-top: solid 1px #777;
+  }
+  
+  .hidden{
+    visibility: hidden  !important;
+  }
+  
+  .hover{
+    &:hover{
+      background-color: rgb(204, 79, 79);
+      color: white;
+    }
+  }
+

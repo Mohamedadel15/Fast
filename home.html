@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    - primary meta tag 
+    -->
+    <title> Fast </title>
+    <meta name="description" content="Fast: Connect: Join our social media website and connect with friends.">
+    <meta name="title" content="Fast  Community: Join a supportive and diverse community of users.">
+
+    <!-- 
+    - font awesome 
+    -->
+    <link rel="stylesheet" href="./style/all.min.css">
+
+    <!-- 
+    -  favicons logo 
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="PNG+xml">
+
+    <!-- 
+    - boot strap
+    -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!-- 
+    - styling css
+    -->
+    <link rel="stylesheet" href="./style/home.css">
+    <!-- 
+    - script js 
+    -->
+    <script src="./assets/js/home.js" defer></script>
+
+    <!-- 
+    - axios js 
+    -->
+    <script src="./assets/js/axios.min.js"></script>
+    <!-- 
+    - swiper slider 
+    -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- 
+    - fancy js 
+    -->
+    <link rel="stylesheet" href="./style/fancybox.css">
+    <script src="./assets/js/fancybox.umd.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <div class="logoDiv d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/logo.png" alt="logo image" class="image-size-sm">
+                    <a class="fs-2 fw-bold gradient-text" href="home.html">Fast</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-lg-5 p-2 p-lg-0 ps-lg-5" id="navbarSupportedContent">
+                    <div class="dropdown d-flex order-lg-1 my-4 my-lg-0">
+                        <div type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="content d-flex justify-content-center align-items-center"
+                                style="cursor: pointer;">
+                                <img class="image-size-sm rounded-circle border border-1 p-1"
+                                    src="./assets/images/ternary image.jpg" alt="image profile" id="userImageNav">
+                                <p class="d-md-inline mt-3 mx-1 fw-medium fst-italic font-monospace text-capitalize"
+                                    id="userNAmeNav"></p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fa-regular fa-user"></i>
+                                    Profile</a></li>
+                            <li><a class="dropdown-item" href="upgrade.html"><i class="fa-regular fa-bookmark"></i>
+                                    Upgrade</a></li>
+                            <li><a class="dropdown-item" href="accountSetting.html"><i class="fa-solid fa-gear"></i>
+                                    Account setting</a></li>
+                            <li><a class="dropdown-item" href="index.html"> <i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+                        </ul>
+                    </div>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="stories my-5">
+        <div class="container">
+            <h1 class="text-center fw-bold">stories</h1>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./assets/images/2.jpg" data-fancybox="gallery" data-caption="Caption #1" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #2" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #3" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #4" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #5" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #6" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #7" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #8" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #9" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #10" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #11" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #12" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #13" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #14" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" data-fancybox="gallery" data-caption="Caption #15" class="story">
+                            <img src="" class="storyImage" />
+                        </a>
+
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="posts pt-5">
+        <div class="container">
+            <!-- Vertically centered modal -->
+            <div class="row gap-3">
+                <div class="col-12 col-lg-6">
+                    <div class="publishPost bg-white rounded-2 row px-0 py-3 p-lg-2  shadow-sm d-flex align-items-center position-relative"
+                        style="cursor: pointer;">
+                        <!-- Modal -->
+                        <button type="button" class="btn position-absolute w-100 h-100" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" onclick="changeModalContent(event)">
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <!-- 
+                                    -- preloader toggle
+                            -->
+                            <div id="preloader" class="hidden">
+                                <div class="negm">
+                                    <div class="loader">
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 
+                                    -- Modal Create post ---- 
+                            -->
+
+                            <div class="modal-dialog" id="myModal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center  w-100" id="exampleModalLabel">Create new
+                                            post</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>What do you have in mind?</p>
+                                        <div class="mb-3">
+                                            <label for="titleFormDate" class="form-label fw-light curser">title</label>
+                                            <input type="text" class="form-control" id="titleFormDate"
+                                                placeholder="title">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="bodyFormDate" class="form-label fw-light curser">body</label>
+                                            <textarea placeholder="body" id="bodyFormDate" class="w-100 px-4 py-2"
+                                                style="resize: none;" rows="5"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="fileFormDate" class="form-label">Small file input
+                                                example</label>
+                                            <input class="form-control form-control-sm" id="fileFormDate" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" id="createPost">Create</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 bg-color p-3 text-center rounded-4">What do you have in mind?</div>
+                        <div class="col-2 pe-0" style="width: fit-content;"><i
+                                class="fa-regular fa-image text-info fs-3 bg-info-subtle p-2 rounded-3"></i></div>
+                        <div class="col-2" style="width: fit-content;"><i
+                                class="fa-solid fa-video text-danger fs-3 bg-danger-subtle p-2 rounded-3"></i></div>
+                    </div>
+                    <div class="mt-5 d-flex justify-content-center flex-column align-items-center" id="post">
+                    </div>
+                    <div class="skeltonLoading d-flex flex-column align-items-center">
+                        <div class="item skelton-animate">
+                            <div class="item__img"></div>
+                            <div class="item__content">
+                                <div class="item__name"></div>
+                                <div class="item__desc"></div>
+                            </div>
+                        </div>
+                        <div class="item skelton-animate">
+                            <div class="item__img"></div>
+                            <div class="item__content">
+                                <div class="item__name"></div>
+                                <div class="item__desc"></div>
+                            </div>
+                        </div>
+                        <div class="item skelton-animate">
+                            <div class="item__img"></div>
+                            <div class="item__content">
+                                <div class="item__name"></div>
+                                <div class="item__desc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 d-none d-lg-block">
+                    <div class="people bg-white p-3 rounded shadow-sm">
+                        <div class="text d-flex justify-content-between align-items-center mb-4">
+                            <p class="fs-2 fw-bold">Peaple You might know</p>
+                            <i class="fa-solid fa-rotate curser gradient-text"></i>
+                        </div>
+                        <div class="swiper siwiperPeople">
+                            <div class="demo "></div>
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper hide" id="swiperContainer">
+                                <!-- Slides -->
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-0">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-0">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-1">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-1">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-2">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-2">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-3">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-3">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-4">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-4">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-5">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-5">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-6">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-6">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-7">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-7">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-8">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-8">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-9">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-9">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-10">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-10">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-11">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-11">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-12">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-12">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-13">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-13">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex gap-3">
+                                            <img src="${responseData.data[i].profile_image}"
+                                                alt="user profile might know" class="rounded-circle curser people-14">
+                                            <div class="content ">
+                                                <p class="fw-bold p-0 m-0 peopleName-14">mohamed adel</p>
+                                                <p class="fw-light ">Suggested For You</p>
+                                            </div>
+                                        </div>
+                                        <p class="py-1 px-4 rounded-5 bg-secondary text-white curser"
+                                            style="width: fit-content;">Follow</p>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PremiumPhotos bg-white p-3 rounded shadow-sm mt-5">
+                        <div class="text d-flex justify-content-between align-items-center mb-4">
+                            <p class="fs-2 fw-bold">Premium Photos</p>
+                            <i class="fa-solid fa-rotate curser gradient-text"></i>
+                        </div>
+                        <div class="swiper siwiperPremium">
+                            <div class="demo demo1"></div>
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper hide" id="PremiumSiwiper">
+                                <div class="swiper-slide ps-4 position-relative">
+                                    <p class="position-absolute p-1 px-1 rounded-3 bg-body-secondary fw-bold"
+                                        style="right:40px ; top: 10px;">$12</p>
+                                    <img src="./assets/images/product-1.jpg" alt="Premium product"
+                                        class="rounded-4 curser" data-price="$12">
+                                </div>
+                                <div class="swiper-slide ps-4 position-relative">
+                                    <p class="position-absolute p-1 px-1 rounded-3 bg-body-secondary fw-bold"
+                                        style="right:40px ; top: 10px;">$18</p>
+
+                                    <img src="./assets/images/product-2.jpg" alt="Premium product"
+                                        class="rounded-4 curser" data-price="$18">
+                                </div>
+                                <div class="swiper-slide ps-4 position-relative">
+                                    <p class="position-absolute p-1 px-1 rounded-3 bg-body-secondary fw-bold"
+                                        style="right:40px ; top: 10px;">$10</p>
+
+                                    <img src="./assets/images/product-3.jpg" alt="Premium product"
+                                        class="rounded-4 curser" data-price="$17">
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                    </div>
+                    <div class=" bg-white p-3 rounded shadow-sm mt-5 Tag">
+                        <div class="text d-flex justify-content-between align-items-center mb-4">
+                            <p class="fs-2 fw-bold">Trends for you </p>
+                            <i class="fa-solid fa-rotate curser gradient-text"></i>
+                        </div>
+                        <div class="trends">
+                            <div class=" row">
+                                <p class="col-1 p-0 m-0 text-center fw-bold">#</p>
+                                <div class="text col-10">
+                                    <p class="p-0 m-0">Artificial Intelligence</p>
+                                    <p class="fw-light">1,245,62 Post</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+        -- alert toggle
+    -->
+    <div class="fixed-top  col-md-8 col-10 col-lg-3 Zindex" id="alerts">
+    </div>
+
+
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div id="preloader" class="hidden">
+            <div class="negm">
+                <div class="loader">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal-dialog">
+            <div class="modal-content bg-danger-subtle">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Warning !!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are u sure to Delete this post
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="deleteBtn" onclick="ShowPopup('')">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

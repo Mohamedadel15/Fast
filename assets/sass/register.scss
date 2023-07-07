@@ -1,0 +1,88 @@
+@import "./variable";
+@import "globalClass.scss";
+@import "./preloader.scss"; 
+/*
+    **** form register style **** 
+*/
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 100px 100px 80px rgba(0, 0, 0, 0.03)
+  }
+
+  .header{
+    background-clip: border-box;
+    background-color: #1e88e5;
+    background-image: linear-gradient(to top right,#1e88e5,#42a5f5);
+    border-radius: 0.75rem;
+    overflow: hidden;
+
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4);
+  }
+  
+  .title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .sub {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .sub.mb {
+    margin-bottom: 1px;
+  }
+  
+  .sub a {
+    color: rgb(23, 111, 211);
+  }
+  
+  .avatar {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(23, 111, 211);
+    border-radius: 50%;
+    align-self: center;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.015),100px 100px 80px rgba(0, 0, 0, 0.03);
+  }
+  
+  .input, button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 16px 10px;
+    background-color: rgb(247, 243, 243);
+    border-radius: 10px;
+    box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.015),100px 100px 80px rgba(0, 0, 0, 0.03);
+  }
+  
+  button {
+    margin-top: 12px;
+    background-color: rgb(23, 111, 211);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .input:focus {
+    border: 1px solid rgb(23, 111, 211);
+  }
+  
+  #file {
+    display: none;
+  }

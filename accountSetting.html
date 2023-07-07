@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    - primary meta tag 
+    -->
+    <title> settings </title>
+    <meta name="description" content="Fast: Connect: Join our social media website and connect with friends.">
+    <meta name="title" content="Fast  Community: Join a supportive and diverse community of users.">
+
+    <!-- 
+    - font awesome 
+    -->
+    <link rel="stylesheet" href="./style/all.min.css">
+
+    <!-- 
+    -  favicons logo 
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="PNG+xml">
+
+    <!-- 
+    - boot strap
+    -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!-- 
+    - styling css
+    -->
+    <link rel="stylesheet" href="./style/setting.css">
+    <!-- 
+    - script js 
+    -->
+    <script src="./assets/js/setting.js" defer></script>
+
+    <!-- 
+    - axios js 
+    -->
+    <script src="./assets/js/axios.min.js"></script>
+    <!-- 
+    - swiper slider 
+    -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- 
+    - fancy js 
+    -->
+    <link rel="stylesheet" href="./style/fancybox.css">
+    <script src="./assets/js/fancybox.umd.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <a href="home.html" class="btn text-primary text-capitalize ">
+                <i class="fa-solid fa-chevron-left" style="font-size: 13px;"></i> back
+            </a>
+            <h1 class="fw-bold fs-2 mt-3">Setting</h1>
+            <div class="profileInfoCard p-4 pb-0 bg-white rounded-4 shadow-sm">
+                <div class="content d-flex gap-4 p-4 justify-content-center align-items-center mb-3">
+                    <div class="image position-relative curser">
+                        <img src="./assets/images/ternary image.jpg" alt="profile image" class="rounded-circle">
+                    </div>
+                    <div class="name">
+                        <h2 class="text-capitalize font-monospace fw-bold py-0 my-0"></h2>
+                        <p class="text-primary"> </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="links text-capitalize d-flex w-100 justify-content-center">
+                    <p class="pb-3 px-4  m-0  curser name active" onclick="changeContent('name')">name</p>
+                    <p class="pb-0 px-4 m-0 curser userName" onclick="changeContent('userName')">user name</p>
+                    <p class="pb-0 px-4  m-0 curser password" onclick="changeContent('password')">password</p>
+                </div>
+            </div>
+
+            <div class="profileInfoCard p-4 pb-0 bg-white rounded-4 shadow-sm mt-5 pb-5 px-5 d-flex overflow-hidden">
+                <div class="username px-5" id="userACtion">
+                    <div class="mb-3">
+                        <label for="oldName" class="form-label curser">old Name</label>
+                        <input type="text" class="form-control" id="oldName" placeholder=" old name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">new Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="new name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">confirm ur password</label>
+                        <input type="password" class="form-control passowrdLength" id="exampleFormControlInput1"
+                            placeholder="*****">
+                    </div>
+                    <button type="button"
+                        class="mt-4 btn btn-outline-success d-flex justify-content-center w-100 align-items-center">Update</button>
+
+                </div>
+                <div class="username px-5">
+                    <div class="mb-3">
+                        <label for="oldUserName" class="form-label">Old user name</label>
+                        <input type="text" class="form-control" id="oldUserName" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">new user name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="@New user name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">confirm ur password</label>
+                        <input type="password" class="form-control passowrdLength" id="exampleFormControlInput1"
+                            placeholder="*****">
+                    </div>
+                    <button type="button"
+                        class="mt-4 btn btn-outline-success d-flex justify-content-center w-100 align-items-center">Update</button>
+
+                </div>
+                <div class="username px-5">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Old password</label>
+                        <input type="password" class="form-control passowrdLength" id="exampleFormControlInput1"
+                            placeholder="old password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">new password</label>
+                        <input type="password" class="form-control passowrdLength" id="exampleFormControlInput1"
+                            placeholder="new password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">confirm new password</label>
+                        <input type="password" class="form-control passowrdLength" id="exampleFormControlInput1"
+                            placeholder="confirm new password">
+                    </div>
+                    <button type="button"
+                        class="mt-4 btn btn-outline-success d-flex justify-content-center w-100 align-items-center">Update</button>
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+    <!-- 
+        -- alert toggle
+    -->
+    <div class="fixed-top  col-md-8 col-10 col-lg-3 Zindex" id="alerts">
+    </div>
+
+</body>
+
+</html>

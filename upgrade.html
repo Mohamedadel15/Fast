@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    - primary meta tag 
+    -->
+    <title> upgrade account </title>
+    <meta name="description" content="Fast: Connect: Join our social media website and connect with friends.">
+    <meta name="title" content="Fast  Community: Join a supportive and diverse community of users.">
+
+    <!-- 
+    - font awesome 
+    -->
+    <link rel="stylesheet" href="./style/all.min.css">
+
+    <!-- 
+    -  favicons logo 
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="PNG+xml">
+
+    <!-- 
+    - boot strap
+    -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!-- 
+    - styling css
+    -->
+    <link rel="stylesheet" href="./style/upgrade.css">
+    <!-- 
+        --script js 
+     -->
+    <script src="./assets/js/upgrade.js" defer></script>
+
+    <!-- 
+    - axios js 
+    -->
+    <script src="./assets/js/axios.min.js"></script>
+    <!-- 
+    - swiper slider 
+    -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- 
+    - fancy js 
+    -->
+    <link rel="stylesheet" href="./style/fancybox.css">
+    <script src="./assets/js/fancybox.umd.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <div class="logoDiv d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/logo.png" alt="logo image" class="image-size-sm">
+                    <a class="fs-2 fw-bold gradient-text" href="home.html">Fast</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-lg-5 p-2 p-lg-0 ps-lg-5" id="navbarSupportedContent">
+                    <div class="dropdown d-flex order-lg-1 my-4 my-lg-0">
+                        <div type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="content d-flex justify-content-center align-items-center"
+                                style="cursor: pointer;">
+                                <img class="image-size-sm rounded-circle border border-1 p-1"
+                                    src="./assets/images/ternary image.jpg" alt="image profile" id="userImageNav">
+                                <p class="d-md-inline mt-3 mx-1 fw-medium fst-italic font-monospace text-capitalize"
+                                    id="userNAmeNav"></p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fa-regular fa-user"></i>
+                                    Profile</a></li>
+                            <li><a class="dropdown-item" href="upgrade.html"><i class="fa-regular fa-bookmark"></i>
+                                    Upgrade</a></li>
+                            <li><a class="dropdown-item" href="accountSetting.html"><i class="fa-solid fa-gear"></i>
+                                    Account setting</a></li>
+                            <li><a class="dropdown-item" href="index.html"> <i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+                        </ul>
+                    </div>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1 class="text-center w-100  fw-bold gradient-text">With Fast Premium</h1>
+            <p class="fw-light text-center w-100 ">Exclusive features and benefits on Fast are accessible to you.</p>
+            <div class="swiper mt-5">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide px-4 py-3 rounded-3 bg-white shadow-sm curser">
+                        <p>Weekly</p>
+                        <h2 class="fs-35"><span class="dollar fs-25 fw-light">$</span> 12.99</h2>
+                    </div>
+                    <div class="swiper-slide px-4 py-3 rounded-3 bg-white shadow-sm curser">
+                        <p>Monthly</p>
+                        <h2 class="fs-35"><span class="dollar fs-25 fw-light">$</span> 32.99 </h2>
+                    </div>
+                    <div class="swiper-slide px-4 py-3 rounded-3 bg-white shadow-sm curser">
+                        <p>Yearly </p>
+                        <h2 class="fs-35"><span class="dollar fs-25 fw-light">$</span> 62.99 </h2>
+                    </div>
+                    <div class="swiper-slide px-4 py-3 rounded-3 bg-white shadow-sm curser">
+                        <p>Forever</p>
+                        <h2 class="fs-35"><span class="dollar fs-25 fw-light">$</span> 92.99</h2>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="content bg-white mt-5 p-4 rounded-3 shadow-sm">
+                <p class="fw-bold">Why Choose Premium Membership</p>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2 mt-1 me-1">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Stories</p>
+                                <p class="fw-light">Post moments your everyday life that disappear after 24 hours
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Messages</p>
+                                <p class="fw-light">Send photos, videos, and messages privately to your friends or
+                                    groups
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-blog"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Explore</p>
+                                <p class="fw-light">Discover content and creators based on their interests
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Privacy</p>
+                                <p class="fw-light">Make your account visible only to people who follow you</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Images</p>
+                                <p class="fw-light">You can upload Unlimited photes and share with your friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Shorts</p>
+                                <p class="fw-light">Create and share short, entertaining videos with music, filters,
+                                    and effects
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Bookmark </p>
+                                <p class="fw-light">Create collections of saved posts based on themes, topics, or
+                                    categories.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center hight">
+                            <div class="col-2  mt-1 me-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="text col-10 ">
+                                <p class="m-0 p-0">Shopping</p>
+                                <p class="fw-light">Browse and buy products from your favorite brands and creators</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+</body>
+
+</html>

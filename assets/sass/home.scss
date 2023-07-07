@@ -1,0 +1,124 @@
+@import "variable";
+@import "./globalClass.scss";
+@import "mixin.scss";
+@import "./preloader.scss";
+@import "skeltonLoading.scss";
+
+/*
+        --- custom styles for my page 
+*/
+
+body {
+  background-color: $main-Color;
+}
+.mySwiper {
+  width: 100%;
+  height: 100px;
+  overflow-y: visible !important;
+  .swiper-slide {
+    border-radius: 50%;
+    border: solid 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 8px;
+      width: 100px;
+      height: 100px;
+      img {
+        display: block;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.stories {
+  .container {
+    .mySwiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          transition: 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+#exampleModal {
+  z-index: 9999 !important;
+}
+
+.image-post {
+  object-fit: cover;
+  height: 400px;
+  object-position: center;
+}
+
+.card-body {
+  border-top: solid 1px #777;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.hover {
+  &:hover {
+    background-color: rgb(204, 79, 79);
+    color: white;
+  }
+}
+
+.siwiperPeople {
+  height: 240px;
+  width: 100%;
+  .swiper-wrapper {
+    .swiper-slide {
+      div {
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+
+.siwiperPremium {
+  width: 50%;
+  height: 200px;
+  @include meDiamMedia() {
+    width: 100%;
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 20px;
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    // color: #fff;
+    font-size: 100px !important;
+    background-color: #fff;
+    padding: 30px !important;
+    border-radius: 50%;
+    margin-left: -10px;
+    margin-right: -30px;
+  }
+}

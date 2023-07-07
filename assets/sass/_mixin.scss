@@ -1,0 +1,11 @@
+@mixin smallMedia(){
+    @media (width <= 768px){
+        @content
+    }
+};
+
+@mixin meDiamMedia(){
+    @media (width <= 1200px){
+        @content
+    }
+}

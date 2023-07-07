@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.fs-25 {
+  font-size: 20px !important;
+}
+
+.fs-35 {
+  font-size: 35px !important;
+}
+
+.fs-40 {
+  font-size: 40px !important;
+}
+
+.bg-color {
+  background-color: rgb(246, 249, 251) !important;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #0a19ef, #8f3cd7, #4782c2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.image-size-sm {
+  max-width: 50px !important;
+  max-height: 50px !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.curser {
+  cursor: pointer;
+}
+
+.Zindex {
+  z-index: 99999 !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+#preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(246, 249, 251, 0.8);
+}
+#preloader .negm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#preloader .negm .loader {
+  --dim: 3rem;
+  width: var(--dim);
+  height: var(--dim);
+  position: relative;
+  animation: spin988 2s linear infinite;
+}
+#preloader .negm .loader .circle {
+  --color: #333;
+  --dim: 1.2rem;
+  width: var(--dim);
+  height: var(--dim);
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+}
+#preloader .negm .loader .circle:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+#preloader .negm .loader .circle:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+#preloader .negm .loader .circle:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+#preloader .negm .loader .circle:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+@keyframes spin988 {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  20%, 25% {
+    transform: scale(1.3) rotate(90deg);
+  }
+  45%, 50% {
+    transform: scale(1) rotate(180deg);
+  }
+  70%, 75% {
+    transform: scale(1.3) rotate(270deg);
+  }
+  95%, 100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+/*
+        --- custom styles for my page 
+*/
+body {
+  background-color: rgb(246, 249, 251);
+}
+body::before {
+  content: "";
+  display: block;
+  height: 50px;
+  left: 0px;
+}
+
+section .container .profileInfoCard .content {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section .container .profileInfoCard .content .image::before {
+  content: "📸"; /* Font Awesome class for camera icon */
+  font-family: "Font Awesome 5 Free";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -5px;
+  right: -8px;
+  background-color: #777;
+  border-radius: 50%;
+  border: solid 4px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .profileInfoCard .content .image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .container .profileInfoCard .username {
+  min-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+section .container .profileInfoCard .margin-0 {
+  margin-left: 0% !important;
+}
+section .container .profileInfoCard .margin-100 {
+  margin-left: -100% !important;
+}
+section .container .profileInfoCard .margin-200 {
+  margin-left: -200% !important;
+}
+
+.active {
+  border-bottom: solid 2px blue;
+  color: blue;
+}
+
+@media (width <= 768px) {
+  p.userName {
+    padding: 0 0 !important;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=setting.css.map */

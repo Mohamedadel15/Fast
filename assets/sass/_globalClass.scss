@@ -1,0 +1,39 @@
+
+.fs-25{
+    font-size: 20px !important;
+}
+
+.fs-35{
+    font-size: 35px !important;
+}
+.fs-40{
+    font-size: 40px !important;
+}
+
+.bg-color{
+    background-color: $main-Color !important;
+}
+.gradient-text {
+    background-image: linear-gradient(to right, #0a19ef, #8f3cd7,#4782c2) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .hidden{
+    visibility: hidden !important;
+  }
+  .image-size-sm{
+        max-width: 50px !important;
+        max-height: 50px !important;
+        object-fit: contain !important;
+  }
+  .curser{
+    cursor: pointer;
+  }
+
+  .Zindex{
+    z-index: 99999 !important;
+  }
+  .hide{
+    display: none !important;
+  }

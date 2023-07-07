@@ -1,0 +1,59 @@
+@import "variable";
+@import "./globalClass.scss";
+@import "mixin.scss";
+@import "./preloader.scss";
+
+/*
+        --- custom styles for my page 
+*/
+body {
+    background-color: $main-Color;
+}
+
+section{
+    &::before {
+        content: "";
+        display: block;
+        height: 80px;
+        left: 0px;
+      }
+}
+
+$names:(
+    "camera" rgb(14 165 233) rgba(14, 164, 233, 0.237),
+    "message" rgb(249 115 22) rgba(249, 116, 22, 0.247),
+    "image" rgb(20 184 166 ) rgba(20, 184, 165, 0.278),
+    "video" rgb(236 72 153 ) rgba(236, 72, 154, 0.227),
+    "bookmark" rgb(34 197 94) rgba(34, 197, 94, 0.308) ,
+    "shopping" rgb(14 165 233) rgba(14, 164, 233, 0.263),
+    "blog" rgb(168 85 247) rgba(169, 85, 247, 0.255)  ,
+    "shield" rgb(239 68 68) rgba(239, 68, 68, 0.308)  
+    );
+
+    @each $name, $color ,$background  in $names {
+        .col-2 {
+            .fa-#{$name} {
+                background-color: $background;
+                color:$color;
+                height: fit-content;
+                border-radius: 50%;
+                padding: 10px;
+        
+                }
+                .fa-cart-#{$name}{
+                    background-color: $background;
+                    color:$color;
+                    height: fit-content;
+                    border-radius: 50%;
+                    padding: 10px;
+        
+                }
+        }
+    }
+
+    .hight{
+        height: 110px;
+    }
+
+
+

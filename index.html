@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    - primary meta tag 
+    -->
+    <title> Login to Fast </title>
+    <meta name="description" content="Fast: Connect: Join our social media website and connect with friends.">
+    <meta name="title" content="Fast  Community: Join a supportive and diverse community of users.">
+
+    <!-- 
+    - font awesome 
+    -->
+    <link rel="stylesheet" href="./style/all.min.css">
+
+    <!-- 
+    -  favicons logo 
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="PNG+xml">
+
+    <!-- 
+    - boot strap
+    -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!-- 
+    - styling css
+    -->
+    <link rel="stylesheet" href="./style/login.css">
+    <!-- 
+    - script js 
+    -->
+    <script src="./assets/js/login.js" defer></script>
+    <!-- 
+    - axios js 
+    -->
+    <script src="./assets/js/axios.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- 
+        -- all content page
+     -->
+    <div class="container d-flex justify-content-center align-items-center flex-column position-relative z-3">
+
+        <nav class="log-in-logo d-flex justify-content-center align-items-center">
+            <img src="./assets/images/logo.png" alt="logo" class="w-25">
+            <span class="login-name fs-40 ms-4 gradient-text">Fast</span>
+        </nav>
+        <form class="form mw-100">
+            <!-- 
+                -- preloader toggle
+            -->
+            <div id="preloader" class="hidden">
+                <div class="negm">
+                    <div class="loader">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- *********************** -->
+            <div class="header">Sign In</div>
+            <div class="inputs">
+                <input placeholder="User name" class="input" type="text" id="userNameLogin">
+                <input placeholder="Password" class="input" type="password" id="login-pass">
+                <div class="checkbox-container">
+                    <label class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                    </label>
+                    <label for="checkbox" class="checkbox-text">show password</label>
+                </div>
+                <button class="sigin-btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="register.html">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- 
+        -- alert toggle
+    -->
+    <div class="fixed-top  col-md-8 col-10 col-lg-3" id="alerts">
+    </div>
+
+
+
+</body>
+
+</html>
